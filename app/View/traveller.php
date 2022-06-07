@@ -53,7 +53,7 @@
 <div class="wrapper">
     <nav class="navbar">
         <div class="nav-wrapper">
-            <a href="#" class="brand-logo">Fire Fly</a>
+            <a href="#" class="brand-logo"> <?=MSName?></a>
             <ul style="margin-left: 400px;" id="nav-mobile" class="left hide-on-med-and-down">
                 <li>
                     <div style="padding-top: 12px" class="row wrap">
@@ -115,7 +115,7 @@
                              class="circle responsive-img"
                              src="https://img.traveltriangle.com/attachments/users/278401/original/25398730_1970901499792686_5269957657050947601_n.png?tr=,w-100,h-100">
                         <!-- notice the "circle" class -->
-                        Fly Paradise to...
+                        <?=WEBSITE?>
                         <i class="material-icons right">arrow_drop_down</i>
                     </a>
                 </li>

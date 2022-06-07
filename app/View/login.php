@@ -190,7 +190,7 @@
 <input type="hidden" id="HTTP_HOST" value="<?= HTTP_HOST ?>">
 <div class="navv">
     <div class="navoneside">
-        <h2>FireFly</h2>
+        <h2><?=MSName?></h2>
     </div>
     <div class="navootherside"></div>
 </div>

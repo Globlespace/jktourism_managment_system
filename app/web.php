@@ -3,10 +3,13 @@ require_once 'config.tpl';
 require_once '../framework/Helper/helpers.php';
 
 use framework\Routing\Route;
-
+session_name(str_replace(" ","",WEBSITE));
 session_start();
+session_regenerate_id();
+
 /*********************************Authorization******************************************/
     Route::get("/login","Authorization.ViewLogin");
+    Route::get("/logout","Authorization.LogOut");
     Route::post("/login","Authorization.Login");
     Route::middleware("/","Authorization.isAuthorize");
 

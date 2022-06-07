@@ -23,6 +23,11 @@ class Authorization extends controller
             }
             $agent->Json();
     }
+    public function LogOut(Request $request){
+        $this->UnAuthorize();
+        header("Location: ".HTTP_HOST."login");
+        exit();
+    }
     private function filterParams(Agent $agent){
 
         $connection = Model::Connection();
@@ -54,6 +59,9 @@ class Authorization extends controller
             $_SESSION["username"]=$agent->username;
             $_SESSION["email"]=$agent->email;
             $_SESSION["name"]=$agent->username;
+    }
+    private function UnAuthorize(){
+           session_destroy();
     }
     public function isAuthorize(){
         if(!isset($_SESSION["isAuthorized"])){

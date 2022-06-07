@@ -1,6 +1,7 @@
 <?php
     require_once 'Statuscodes.php';
-    define('WEBSITE','');
+    define('MSName','Rapid Tour');
+    define('WEBSITE','JK Tourism');
     define('DS',DIRECTORY_SEPARATOR);
     define('HTTP_HOST','http://'.$_SERVER["HTTP_HOST"].'/jktourism_managment_system/');
     define('STYLE',HTTP_HOST.'app/Style/');
@@ -24,7 +25,7 @@
     define('ADMIN_MAIL_PASS','');
 
     
-    define('DB_NAME','firefly');
+    define('DB_NAME','jktourism_managment_system');
     define('DB_HOST','localhost:');
     define('DB_PORT','3306');
     define('DB_USER','root');

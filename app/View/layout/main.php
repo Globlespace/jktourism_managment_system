@@ -66,7 +66,7 @@ if it's not present, don't show loader */
 <div class="wrapper">
     <nav class="navbar">
         <div class="nav-wrapper">
-            <a href="#" class="brand-logo">Fire Fly</a>
+            <a href="#" class="brand-logo"><?=MSName?></a>
             <ul style="margin-left: 400px;" id="nav-mobile" class="left hide-on-med-and-down">
                 <li>
                     <div style="padding-top: 12px" class="row wrap">
@@ -127,7 +127,7 @@ if it's not present, don't show loader */
                              class="circle responsive-img"
                              src="https://img.traveltriangle.com/attachments/users/278401/original/25398730_1970901499792686_5269957657050947601_n.png?tr=,w-100,h-100">
                         <!-- notice the "circle" class -->
-                        Fly Paradise to...
+                        <?=WEBSITE?>
                         <i class="material-icons right">arrow_drop_down</i>
                     </a>
                 </li>
@@ -138,7 +138,7 @@ if it's not present, don't show loader */
         <li><a href="#!">one</a></li>
         <li><a href="#!">two</a></li>
         <li class="divider"></li>
-        <li><a href="#!">three</a></li>
+        <li onmousedown="window.location='<?=HTTP_HOST?>logout'"><a href="#!">LogOut</a></li>
     </ul>
     <div class="row" style="margin-bottom: 0px; position: relative">
         <div class="col s3 sidebar">
@@ -185,7 +185,7 @@ if it's not present, don't show loader */
                                 </g>
                             </svg>
                         </div>
-                        <span class="title team">FireFly</span>
+                        <span class="title team"><?=MSName?></span>
                         <p class="team dimcolor">Pending Tasks <br>
                         </p>
                         <div style="position: absolute; left: 90%; top: 30%;" class="chip team">
