@@ -22,7 +22,7 @@ class Agent extends Model
         $this->Code=404;
         $this->Success=false;
         $this->Message="email/password is incorrect";
-        //$this->Message=encrypt("admin1234");
+        //$this->Message=encrypt($this->password);
         return false;
 
     }
